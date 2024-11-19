@@ -40,7 +40,14 @@
   ],
   "background": {
     "service_worker": "bundles/background.js",
+    "scripts": ["bundles/background.js"],
     "type": "module"
   },
-  "default_locale": "en"
+  "default_locale": "en",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "lark-docs-conv@aoki.app",
+      "strict_min_version": "120.0"
+    }
+  }
 }
